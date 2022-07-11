@@ -1,5 +1,4 @@
-# fullstack-test
-Full Stack test
+# Fullstack-test
 ## Fantasticfy - test
 
 ## PRETTY DOGS
