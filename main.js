@@ -50,14 +50,18 @@ async function loadByBreed(breed) {
 function createDogsImages(images) {
     
     let dogName = theName.options[theName.selectedIndex].value
+    
+    let imageDog = ""
+    
+    for(let i = 0; i < 3; i++){
+	imageDog += `<div class="box"><img src='${images[i]}' width="200"/></div>`
+    }
 
     document.getElementById("dogsimages").innerHTML = `
     <div>
         <h3 class="h3text">${dogName}</h3>
         <div class="imagenes">
-            <div class="box"><img src='${images[0]}' width="200"/></div>
-            <div class="box"><img src='${images[1]}' width="200"/></div>
-            <div class="box"><img src='${images[2]}' width="200"/></div>
+            ${imageDog}
         </div>
         <div class="modal">
             <span class="close"><i>Close</i></span>
